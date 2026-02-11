@@ -75,6 +75,39 @@
 .footer-links .sep {
 	opacity: 0.35;
 }
+
+.about-grid {
+	display: flex;
+	gap: 2em;
+	align-items: flex-start;
+}
+
+.about-text {
+	flex: 1 1 60%;
+}
+
+.about-photo {
+	flex: 0 0 220px;
+}
+
+.about-photo img {
+	width: 100%;
+	height: auto;
+	border-radius: 16px;
+	display: block;
+}
+
+@media screen and (max-width: 736px) {
+	.about-grid {
+		flex-direction: column;
+	}
+
+	.about-photo {
+		flex: 0 0 auto;
+		max-width: 260px;
+	}
+}
+
 		</style>
 	</head>
 
@@ -116,12 +149,20 @@
 <article id="about">
 	<h2 class="major">About</h2>
 
-	<p>
-		Hi, my name is Matthias, and I am a researcher at the Machine Learning and Data Analytics Lab in Erlangen, Germany.
-		My work focuses on developing machine learning–based methods for animal observation.
-		Our goal is to provide biologists, ecologists, and conservationists with tools that support their work by automating key parts of the wildlife monitoring process.
-		A central objective of my research is the recognition of individual animals, either based on their appearance or on their movement patterns.
-	</p>
+<div class="about-grid">
+	<div class="about-text">
+		<p>
+			Hi, my name is Matthias, and I am a researcher at the Machine Learning and Data Analytics Lab in Erlangen, Germany.
+			My work focuses on developing machine learning–based methods for animal observation.
+			Our goal is to provide biologists, ecologists, and conservationists with tools that support their work by automating key parts of the wildlife monitoring process.
+			A central objective of my research is the recognition of individual animals, either based on their appearance or on their movement patterns.
+		</p>
+	</div>
+
+	<div class="about-photo">
+		<img src="images/matthias.jpeg" alt="Portrait of Matthias Zürl" />
+	</div>
+</div>
 
 	<h2 class="major">CV</h2>
 
